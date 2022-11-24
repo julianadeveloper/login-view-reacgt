@@ -10,10 +10,10 @@ function App() {
   };
   return (
     <div className="App">
-      <h1>Olá Mundo</h1>
+      {/* <h1>Olá Mundo</h1>
       <p>{counter}</p>
       <button onClick={increment}>Add</button>
-      <p>Aqui vai ficar a navbar</p>
+      <p>Aqui vai ficar a navbar</p> */}
       <NavBar />
     </div>
   );

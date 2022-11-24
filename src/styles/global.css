@@ -3,16 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-@media(max-width:1080px){
-  html{
-    font-size: 93.75%
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
   }
 }
-@media(max-width:720){
-  html{
-    font-size: 87.5%
+@media (max-width: 720) {
+  html {
+    font-size: 87.5%;
   }
 }
+
 body {
   background-color: var(--background);
   color: var(--text);
@@ -29,12 +30,12 @@ button {
 }
 
 a {
-  color: inherit;
+  color: var(--white);
   text-decoration: none;
 }
 :root {
   --white: #fff;
-  --background: #f2f3f5;
+  --background: #3675f3;
   --text: #666666;
   --text-highlitgh: #b3b9ff;
   --title: #2e384d;
