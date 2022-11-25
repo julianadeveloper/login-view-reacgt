@@ -7,10 +7,13 @@ export function NavBar() {
   return (
     <Container>
       <Nav>
-        <UrlnavBar linkName="Home" href="#" />
-        <UrlnavBar linkName="Menu" href="#" />
-        <UrlnavBar linkName="Contato" href="#" />
-        <UrlnavBar linkName="Carrinho" href="#" />
+        <p>Total de pts: 89</p>
+        <Content>
+          <UrlnavBar linkName="Home" href="#" />
+          <UrlnavBar linkName="Menu" href="#" />
+          <UrlnavBar linkName="Ranking" href="#" />
+          <UrlnavBar linkName="Shop" href="#" />
+        </Content>
         <Content>
           <InputProducts search="text" />
           <ButtonSearchNav text="tomato">Search</ButtonSearchNav>

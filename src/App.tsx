@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import { ProfilePlayer } from "./components/CardPlayer/playerProfile";
 import { NavBar } from "./components/NavBarHome/navBar";
 import  './styles/global.css'
 
@@ -15,6 +16,7 @@ function App() {
       <button onClick={increment}>Add</button>
       <p>Aqui vai ficar a navbar</p> */}
       <NavBar />
+      <ProfilePlayer/>
     </div>
   );
 }

@@ -8,7 +8,7 @@ export function InputProducts({ search }: InputProductsProps) {
   const [searchText, setSearchText] = useState("");
   return (
     <div>
-      <Input placeholder="nome do produto"></Input>
+      <Input placeholder="Buscar Jogador"></Input>
     </div>
   );
 }
