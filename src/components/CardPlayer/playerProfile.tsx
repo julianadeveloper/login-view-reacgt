@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { isPropertySignature } from "typescript";
-import { ButtonCardPlayer } from "./button";
+import { ButtonCardPlayer  } from "./button";
 import {
   Container,
   Content,
@@ -29,6 +29,7 @@ export function ProfilePlayer() {
         <p>Habilidades: Velocidade, Força e Destreza.</p>
         <p>Valor: R$ 29 pts</p>
         <ButtonCardPlayer color="green" children="Buy"></ButtonCardPlayer>
+
       </ContentDescription>
     </Container>
   );

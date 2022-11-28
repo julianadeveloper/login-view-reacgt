@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button } from "./styles/profileCard";
+import { Button1, Button2 } from "./styles/profileCard";
 
 interface ButtonCardPlayerProps {
   color: string;
@@ -13,6 +13,9 @@ export function ButtonCardPlayer(props: ButtonCardPlayerProps) {
   const add = () => {
     setTextButton("Adicionado ao carrinho");
   };
+  const remove = () => {
+    setTextButton("Removido do carrinho");
+  };
 
   // useEffect(()=>{
   //   setTextButton('')
@@ -25,9 +28,12 @@ export function ButtonCardPlayer(props: ButtonCardPlayerProps) {
   return (
     <div>
       <p>{textButton}</p>
-      <Button onClick={() => add()} type="button" color={props.color}>
+      <Button1 onClick={() => add()} type="button" color={props.color}>
         {props.children}
-      </Button>
+      </Button1>
+      <Button2 onClick={() => remove()} type="button" color={props.color}>
+        {props.children}
+      </Button2>
     </div>
   );
 }

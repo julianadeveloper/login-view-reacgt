@@ -5,20 +5,31 @@ export const ContentDescription = styled.div`
   width: 100%;
   height: 100%;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 0.25rem;
+  color: var(--white);
 
-   p{
+  p {
     padding: 0.1rem;
-    margin: 0.1rem;
+    line-height: 1.5;
+    font-weight: 400;
   }
 `;
 export const Content = styled.div`
   display: flex;
-
 `;
-export const Button = styled.button`
+export const Button1 = styled.button`
+  color: white;
+  margin-left: 1%;
+  width: 3rem;
+  height: 100%;
+  border-radius: 8%;
+  background-color: #74992e;
+  border: none;
+  position: relative;
+`;
+export const Button2 = styled.button`
   color: white;
   margin-left: 1%;
   width: 3rem;
@@ -29,20 +40,17 @@ export const Button = styled.button`
   position: relative;
 `;
 export const Photo = styled.img`
-border-radius: 5%;
-
   background-color: blue;
   justify-content: center;
   align-items: center;
   display: flex;
-  height: 80%;
   width: 100%;
 `;
 export const Container = styled.div`
   max-width: 17rem;
   height: 100%;
   display: flex;
-  background-color: white;
+  background-color: var(--blue-dark);
   flex-direction: column;
   margin: 1rem;
   border-radius: 5%;
