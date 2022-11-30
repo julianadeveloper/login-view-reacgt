@@ -16,7 +16,7 @@ export const ContentLeft = styled.div`
   line-height: 1;
   width: 50%;
   height: 100vh;
-  background-color: white;
+  background-color: transparent;
 `;
 
 export const ContentRight = styled.div`
@@ -27,6 +27,16 @@ export const ContentRight = styled.div`
   line-height: 1;
   width: 50%;
   background-color: transparent;
+`;
+
+export const FormRegister = styled.div`
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+
 `;
 export const FormLogin = styled.div`
   display: flex;
@@ -67,6 +77,15 @@ export const InputsIcon = styled.div`
   padding: 1rem;
 `;
 export const BtnLogin = styled.button`
+  margin-top: 1rem;
+  width: 12rem;
+  height: 3rem;
+  font-weight: 600;
+  color: #6959cd;
+  background-color: var(--white);
+  border: none;
+`;
+export const BtnRegister = styled.button`
   margin-top: 1rem;
   width: 12rem;
   height: 3rem;

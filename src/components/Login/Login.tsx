@@ -7,6 +7,7 @@ import {
   ContentRight,
   FormLogin,
   InputsIcon,
+  FormRegister,
 } from "./styles/stlye";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -14,12 +15,55 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 library.add(fas);
 
 export function Login() {
-  function alerta() {
+  const Login = () => {
+    alert("Olá");
+  }
+  const Register = () => {
     alert("Olá");
   }
   return (
     <ContainerLogin>
-      <ContentLeft>PEITA PRA TU VER FDP</ContentLeft>
+      <ContentLeft>
+        <FormRegister>
+          <InputsIcon>
+            <Label>
+              <span>
+                <FontAwesomeIcon icon={"user"} />
+              </span>
+            </Label>
+            <InputLogin type="text" placeholder="Fullname"></InputLogin>
+          </InputsIcon>
+          <InputsIcon>
+            <Label>
+              <span>
+                <FontAwesomeIcon icon={"envelope"} />
+              </span>
+            </Label>
+            <InputLogin type="email" placeholder="Email"></InputLogin>
+          </InputsIcon>
+          <InputsIcon>
+            <Label>
+              <span>
+                <FontAwesomeIcon icon={"lock"} />
+              </span>
+            </Label>
+            <InputLogin type="password" placeholder="Password"></InputLogin>
+          </InputsIcon>
+          <InputsIcon>
+            <Label>
+              <span>
+                <FontAwesomeIcon icon={"lock"} />
+              </span>
+            </Label>
+            <InputLogin
+              type="password"
+              placeholder="Confirm Password"
+            ></InputLogin>
+          </InputsIcon>
+        <BtnLogin onClick={Register}>Register</BtnLogin>
+        </FormRegister>
+        <></>
+      </ContentLeft>
       <ContentRight>
         <FormLogin>
           <InputsIcon>
@@ -39,7 +83,7 @@ export function Login() {
             <InputLogin type="password" placeholder="Password"></InputLogin>
           </InputsIcon>
         </FormLogin>
-        <BtnLogin onClick={alerta}>Entrar</BtnLogin>
+        <BtnLogin onClick={Login}>Entrar</BtnLogin>
       </ContentRight>
     </ContainerLogin>
   );
