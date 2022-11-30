@@ -9,6 +9,10 @@ import {
 } from "./styles/profileCard";
 
 export function ProfilePlayer() {
+  const remove = () => {
+
+    console.log('ok')
+  };
   return (
     <Container>
       <Content>
@@ -20,7 +24,7 @@ export function ProfilePlayer() {
       <ContentDescription>
         <p>Nome: Neymar Jr.</p>
         <p> Idade: 30 anos. </p>
-        <p> Num. de gols: 290.</p>
+        <p> Gols: 290.</p>
         <p> Assistências: 183</p>
         <p>Média por partida: 2.</p>
         <p> Total de Jogos: 484. </p>
@@ -28,7 +32,8 @@ export function ProfilePlayer() {
         <p>Posição: Atacante.</p>
         <p>Habilidades: Velocidade, Força e Destreza.</p>
         <p>Valor: R$ 29 pts</p>
-        <ButtonCardPlayer color="green" children="Buy"></ButtonCardPlayer>
+        <ButtonCardPlayer color="green"></ButtonCardPlayer>
+        
 
       </ContentDescription>
     </Container>

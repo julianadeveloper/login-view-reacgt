@@ -1,12 +1,18 @@
 .App {
   text-align: center;
+  overflow: hidden;
+
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.LoginView {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

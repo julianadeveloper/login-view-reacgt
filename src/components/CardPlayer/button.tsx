@@ -3,7 +3,6 @@ import { Button1, Button2 } from "./styles/profileCard";
 
 interface ButtonCardPlayerProps {
   color: string;
-  children: string;
 }
 
 //exemplo de como construir as funções e tipar
@@ -29,10 +28,10 @@ export function ButtonCardPlayer(props: ButtonCardPlayerProps) {
     <div>
       <p>{textButton}</p>
       <Button1 onClick={() => add()} type="button" color={props.color}>
-        {props.children}
+        Add
       </Button1>
       <Button2 onClick={() => remove()} type="button" color={props.color}>
-        {props.children}
+        Remove
       </Button2>
     </div>
   );

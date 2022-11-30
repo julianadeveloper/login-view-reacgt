@@ -14,10 +14,10 @@ export function NavBar() {
           <UrlnavBar linkName="Ranking" href="#" />
           <UrlnavBar linkName="Shop" href="#" />
         </Content>
-        <Content>
+        {/* <Content>
           <InputProducts search="text" />
           <ButtonSearchNav text="tomato">Search</ButtonSearchNav>
-        </Content>
+        </Content> */}
       </Nav>
     </Container>
   );
