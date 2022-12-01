@@ -9,22 +9,20 @@ import {
   Label
 } from "./styles/styles-login";
 
-interface ComponentLoginProps {
-  isActiveStateComponent: boolean;
-}
 
-export function FormLogin(props: ComponentLoginProps) {
+
+export function FormLogin() {
   const Login = () => {
     alert("Olá");
   };
-  const [isActiveRegister, setIsActiveRegister] = useState<Boolean>(false);
-  let checkActiveRegister = isActiveRegister;
+
+
+  // const [isActiveRegister, setIsActiveRegister] = useState<Boolean>(false);
+  // let checkActiveRegister = isActiveRegister;
 
   return (
     <ContainerLogin>
-      {/* <RegisterLink>
-        <RegisterButton>Register</RegisterButton>
-      </RegisterLink> */}
+
       <ContentRight>
         <InputsIcon>
           <Label>

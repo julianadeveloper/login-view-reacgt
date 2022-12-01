@@ -3,15 +3,13 @@ import styled from "styled-components";
 export const ContainerLogin = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: #6959cd;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   @media (max-width: 640) {
-  
-  font-size: 87.5%;
-
-}
+    font-size: 87.5%;
+  }
 `;
 
 export const ContentLeft = styled.div`
@@ -21,14 +19,14 @@ export const ContentLeft = styled.div`
   line-height: 1;
   width: 25%;
   height: 50vh;
-  background-color: black;
+  background-color: transparent;
   flex-direction: column;
 `;
 export const RegisterLink = styled.div`
   position: absolute;
   display: flex;
-  margin-bottom: 27rem;
-  margin-right: 4rem;
+  justify-content: center;
+  align-items: flex-start;
 `;
 export const LoginLink = styled.div`
   position: absolute;
@@ -37,15 +35,7 @@ export const LoginLink = styled.div`
   margin-left: 3rem;
 `;
 
-export const RegisterButton = styled.button`
-  color: white;
-  background-color: blueviolet;
-  width: 10rem;
-  height: auto;
-  position: absolute;
-  z-index: 9999;
-  display: flex;
-`;
+
 
 export const ContentRight = styled.div`
   display: flex;
@@ -114,8 +104,6 @@ export const BtnRegister = styled.button`
   background-color: var(--white);
   border: none;
   @media (max-width: 640) {
-  
-  font-size: 87.5%;
-
-}
+    font-size: 87.5%;
+  }
 `;

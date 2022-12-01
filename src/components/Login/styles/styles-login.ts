@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerLogin = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: #6959cd;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +39,7 @@ export const ContentRight = styled.div`
   line-height: 1;
   width: 25%;
   height: 50vh;
-  background-color: burlywood;
+  background-color: transparent;
 `;
 
 export const Label = styled.label`
@@ -64,6 +64,7 @@ export const InputLogin = styled.input`
   }
   &::placeholder {
     padding: 0.25rem;
+    color: white;
   }
 `;
 

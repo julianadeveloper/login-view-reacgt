@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
 import {
   BtnRegister,
   ContainerLogin,
@@ -17,15 +16,9 @@ export function FormRegister(props: ComponentLoginProps) {
     alert("Olá");
   }
 
-  const [isActiveRegister, setIsActiveRegister] = useState<Boolean>(false);
-  let checkActiveRegister = isActiveRegister;
-  let changeRegisterState = () => setIsActiveRegister(!isActiveRegister);
-
   return (
     <ContainerLogin>
-    {/*           <RegisterLink>
-          <RegisterButton>Register</RegisterButton>
-        </RegisterLink>*/}
+
       <ContentLeft>
           <InputsIcon>
             <Label>
@@ -65,7 +58,6 @@ export function FormRegister(props: ComponentLoginProps) {
           <BtnRegister
             onClick={() => {
               Register();
-              changeRegisterState();
             }}
           >
             Register
