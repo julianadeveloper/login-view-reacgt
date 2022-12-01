@@ -7,6 +7,11 @@ export const ContainerLogin = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 640) {
+  
+  font-size: 87.5%;
+
+}
 `;
 
 export const ContentLeft = styled.div`
@@ -17,6 +22,7 @@ export const ContentLeft = styled.div`
   width: 25%;
   height: 50vh;
   background-color: black;
+  flex-direction: column;
 `;
 export const RegisterLink = styled.div`
   position: absolute;
@@ -101,10 +107,15 @@ export const BtnLogin = styled.button`
 `;
 export const BtnRegister = styled.button`
   margin-top: 1rem;
-  width: 12rem;
+  width: 80%;
   height: 3rem;
   font-weight: 600;
   color: #6959cd;
   background-color: var(--white);
   border: none;
+  @media (max-width: 640) {
+  
+  font-size: 87.5%;
+
+}
 `;

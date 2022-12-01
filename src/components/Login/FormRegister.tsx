@@ -5,9 +5,7 @@ import {
   ContainerLogin,
   ContentLeft, InputRegister,
   InputsIcon,
-  Label, LoginLink,
-  RegisterButton,
-  RegisterLink
+  Label
 } from "./styles/styles-register";
 
 interface ComponentLoginProps {
