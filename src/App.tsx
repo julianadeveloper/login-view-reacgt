@@ -10,7 +10,7 @@ function App() {
       <NavBar />
       <ProfilePlayer/> */}
       <div className="LoginView">
-        <Login />
+        <Login isActiveStateComponent={false} />
       </div>
     </div>
   );

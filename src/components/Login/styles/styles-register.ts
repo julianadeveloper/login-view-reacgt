@@ -24,11 +24,6 @@ export const RegisterLink = styled.div`
   margin-bottom: 27rem;
   margin-right: 4rem;
 `;
-
-export const RegisterButton = styled.button`
-  color: white;
-  background-color: blueviolet;
-`;
 export const LoginLink = styled.div`
   position: absolute;
   display: flex;
@@ -36,10 +31,16 @@ export const LoginLink = styled.div`
   margin-left: 3rem;
 `;
 
-export const LoginButtom = styled.button`
+export const RegisterButton = styled.button`
   color: white;
   background-color: blueviolet;
+  width: 10rem;
+  height: auto;
+  position: absolute;
+  z-index: 9999;
+  display: flex;
 `;
+
 export const ContentRight = styled.div`
   display: flex;
   align-items: center;
@@ -58,19 +59,13 @@ export const FormRegister = styled.div`
   justify-content: center;
   flex-direction: column;
 `;
-export const FormLogin = styled.div`
-  display: flex;
-  padding: 4.4rem;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-`;
+
 export const Label = styled.label`
   color: white;
   line-height: 2;
 `;
 
-export const InputLogin = styled.input`
+export const InputRegister = styled.input`
   border: none;
   outline: none;
   width: 100%;
