@@ -8,6 +8,11 @@ import {
   FormLogin,
   InputsIcon,
   FormRegister,
+  BtnRegister,
+  RegisterLink,
+  RegisterButton,
+  LoginLink,
+  LoginButtom,
 } from "./styles/stlye";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -17,12 +22,15 @@ library.add(fas);
 export function Login() {
   const Login = () => {
     alert("Olá");
-  }
+  };
   const Register = () => {
     alert("Olá");
-  }
+  };
   return (
     <ContainerLogin>
+      <RegisterLink>
+        <RegisterButton>Register</RegisterButton>
+      </RegisterLink>
       <ContentLeft>
         <FormRegister>
           <InputsIcon>
@@ -60,10 +68,13 @@ export function Login() {
               placeholder="Confirm Password"
             ></InputLogin>
           </InputsIcon>
-        <BtnLogin onClick={Register}>Register</BtnLogin>
+          <BtnRegister onClick={Register}>Register</BtnRegister>
         </FormRegister>
-        <></>
       </ContentLeft>
+      <LoginLink>
+        <LoginButtom>Login</LoginButtom>
+      </LoginLink>
+
       <ContentRight>
         <FormLogin>
           <InputsIcon>

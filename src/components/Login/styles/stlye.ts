@@ -14,19 +14,41 @@ export const ContentLeft = styled.div`
   align-items: center;
   justify-content: center;
   line-height: 1;
-  width: 50%;
-  height: 100vh;
-  background-color: transparent;
+  width: 25%;
+  height: 50vh;
+  background-color: black;
+`;
+export const RegisterLink = styled.div`
+  position: absolute;
+  display: flex;
+  margin-bottom: 27rem;
+  margin-right: 4rem;
 `;
 
+export const RegisterButton = styled.button`
+  color: white;
+  background-color: blueviolet;
+`;
+export const LoginLink = styled.div`
+  position: absolute;
+  display: flex;
+  margin-bottom: 27rem;
+  margin-left: 3rem;
+`;
+
+export const LoginButtom = styled.button`
+  color: white;
+  background-color: blueviolet;
+`;
 export const ContentRight = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   line-height: 1;
-  width: 50%;
-  background-color: transparent;
+  width: 25%;
+  height: 50vh;
+  background-color: burlywood;
 `;
 
 export const FormRegister = styled.div`
@@ -35,16 +57,13 @@ export const FormRegister = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
-
 `;
 export const FormLogin = styled.div`
   display: flex;
-  padding: 1rem;
+  padding: 4.4rem;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-
 `;
 export const Label = styled.label`
   color: white;
@@ -58,7 +77,7 @@ export const InputLogin = styled.input`
   height: 2rem;
   border-radius: 5%;
   background-color: transparent;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid blueviolet;
   color: white;
   margin: 0.25rem;
 
