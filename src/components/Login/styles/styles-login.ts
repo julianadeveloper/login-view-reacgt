@@ -8,10 +8,8 @@ export const ContainerLogin = styled.div`
   align-items: center;
   justify-content: center;
   @media (max-width: 640) {
-  
     font-size: 87.5%;
-
-}
+  }
 `;
 
 export const LoginLink = styled.div`
@@ -40,6 +38,8 @@ export const ContentRight = styled.div`
   width: 25%;
   height: 50vh;
   background-color: transparent;
+  border: 1px solid white;
+
 `;
 
 export const Label = styled.label`
@@ -57,6 +57,8 @@ export const InputLogin = styled.input`
   border-bottom: 1px solid blueviolet;
   color: white;
   margin: 0.25rem;
+  padding: 0.5rem;
+
 
   &:focus {
     outline: none;
@@ -81,10 +83,11 @@ export const BtnLogin = styled.button`
   color: #6959cd;
   background-color: var(--white);
   border: none;
+  &:hover {
+    background-color: blueviolet;
+    color: var(--white);
+  }
   @media (max-width: 720) {
-  
-  font-size: 87.5%;
-
-}
+    font-size: 87.5%;
+  }
 `;
-

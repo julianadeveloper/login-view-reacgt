@@ -10,18 +10,15 @@ import {
 } from "./styles/styles-login";
 
 
-
 export function FormLogin() {
   const Login = () => {
     alert("Olá");
   };
-
-
   // const [isActiveRegister, setIsActiveRegister] = useState<Boolean>(false);
   // let checkActiveRegister = isActiveRegister;
 
   return (
-    <ContainerLogin>
+    <ContainerLogin >
 
       <ContentRight>
         <InputsIcon>

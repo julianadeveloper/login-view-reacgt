@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: black;
+  background-color: #301934;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +26,11 @@ export const ButtonSelect = styled.button`
   align-items: center;
   text-align: center;
   justify-content: center;
-  font-weight:600;
-  padding:0.25rem;
+  font-weight: 600;
+  padding: 0.25rem;
+  @media (max-width: 640) {
+    font-size: 87.5%;
+    position: absolute;
+    z-index: 9999;
+  }
 `;
-

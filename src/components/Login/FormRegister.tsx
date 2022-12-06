@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 import {
   BtnRegister,
   ContainerLogin,
@@ -7,13 +8,11 @@ import {
   Label
 } from "./styles/styles-register";
 
-interface ComponentLoginProps {
-  isActiveStateComponent: boolean;
-}
 
-export function FormRegister(props: ComponentLoginProps) {
+export function FormRegister() {
   function Register() {
     alert("Olá");
+
   }
 
   return (
@@ -58,7 +57,9 @@ export function FormRegister(props: ComponentLoginProps) {
           <BtnRegister
             onClick={() => {
               Register();
+
             }}
+            type="button"
           >
             Register
           </BtnRegister>

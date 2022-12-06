@@ -21,6 +21,7 @@ export const ContentLeft = styled.div`
   height: 50vh;
   background-color: transparent;
   flex-direction: column;
+  border: 1px solid white;
 `;
 export const RegisterLink = styled.div`
   position: absolute;
@@ -34,8 +35,6 @@ export const LoginLink = styled.div`
   margin-bottom: 27rem;
   margin-left: 3rem;
 `;
-
-
 
 export const ContentRight = styled.div`
   display: flex;
@@ -71,7 +70,7 @@ export const InputRegister = styled.input`
   border-bottom: 1px solid blueviolet;
   color: white;
   margin: 0.25rem;
-
+  padding: 0.5rem;
   &:focus {
     outline: none;
   }
@@ -79,6 +78,7 @@ export const InputRegister = styled.input`
     color: white;
     padding: 0.25rem;
   }
+
 `;
 
 export const InputsIcon = styled.div`
@@ -105,5 +105,9 @@ export const BtnRegister = styled.button`
   border: none;
   @media (max-width: 640) {
     font-size: 87.5%;
+  }
+  &:hover {
+    background-color: blueviolet;
+    color: var(--white);
   }
 `;
